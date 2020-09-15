@@ -1,0 +1,36 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+$headerHeight: 60px;
+$footerHeight: 60px;
+$breadcrumbsHeight: 70px;
+$contentPadding: 0 5%;
+$contentMinHeight: calc(100vh - #{$headerHeight} - #{$footerHeight});
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F2F3F7;
+}
+
+.content-padding {
+  padding: $contentPadding;
+}
+
+.content-min-height {
+  min-height: $contentMinHeight;
+}
+
+.header-height {
+  height: $headerHeight;
+}
+
+.footer-height {
+  height: $footerHeight;
+}
+
+.breadcrumbs-height {
+  height: $breadcrumbsHeight;
+}

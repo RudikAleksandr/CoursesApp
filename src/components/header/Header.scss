@@ -1,0 +1,50 @@
+.header {
+    background-color: #414452;
+  
+    &__row,
+    &__title {
+      height: 100%;
+    }
+  
+    &__link-course,
+    &__btn-log-of {
+      color: white;
+    }
+  
+    &__btn-log-of {
+      background-color: #414452;
+      border: none;
+    }
+  
+    &__title-block {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__user-info {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+  
+    &__user-info_name {
+      margin-left: 10px;
+    }
+  
+    &__link-course {
+      font-size: 0.5em;
+    }
+  
+    &__link-course {
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  
+    &__links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
