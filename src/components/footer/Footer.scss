@@ -1,0 +1,15 @@
+.footer {
+  background-color: #414452;
+  flex: 0 0 auto;
+
+  &__row {
+    height: 100%;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #8B8E9B;
+  }
+}
