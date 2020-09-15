@@ -1,0 +1,70 @@
+.courses-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px #EBECF1;
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 1.7em;
+  }
+
+  &__title-link {
+    color: black;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__date-time {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__edit-btn,
+  &__delete-btn {
+    padding: 4px 25px;
+    background-color: #30B6DD;
+    border-color: #30B6DD;
+    color: white;
+  }
+
+  &__delete-btn {
+    margin-left: 15px;
+  }
+
+  &__date-time {
+    color: #CACCDA;
+  }
+
+  &__date {
+    margin-left: 20px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__star-icon {
+    margin-left: 5px;
+  }
+
+  &__top-rated {
+    background-color: rgb(233, 232, 232)
+  }
+
+  @media (max-width: 991px) {
+    &__date-time {
+      justify-content: flex-start;
+      margin-bottom: 8px;
+    }
+
+    &__actions {
+      margin-top: 15px;
+    }
+  }
+}

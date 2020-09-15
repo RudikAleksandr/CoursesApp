@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.scss';
-import { Header } from './components/header';
-import { Footer } from './components/footer';
-import { Breadcrumbs } from './components/breadcrumbs';
+import { Header, Footer, Breadcrumbs } from './components';
+import { Courses } from './pages/courses';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <Header userFirstName='Aleksandr' 
         userLastName='Rudin' />
       <Breadcrumbs />
+      <Courses />
       <Footer />
     </>
   );
