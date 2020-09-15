@@ -1,0 +1,15 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  &__item {
+    background-color: white;
+    margin: 0;
+  }
+
+  &__link {
+    color: #62646E;
+    font-weight: 500;
+  }
+}
