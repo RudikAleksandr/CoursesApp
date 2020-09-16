@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import { CoursesItem, CoursesList, CoursesSectionActions } from '../components';
+import coursesJSON from './courses.json';
 
 class Courses extends Component {
-  courses = [{
-    id: "1",
-    name: 'name 1'
-  }, {
-    id: "2",
-    name: 'name 2'
-  }]
+  courses = coursesJSON.courses;
+  state = {
+    courses: this.courses
+  }
 
   handleChangeSearchText = (value: string): void => {
-
+    this.setState({
+      courses: this.courses.filter((course) => course.name.includes(value))
+    })
   }
 
   handleClickEdit = (id: string): void => {
 
   }
 
-  handleClickDelete = (id: string): void => {
-
+  handleClickDelete = (id: number): void => {
+    this.courses = this.courses.filter((course) => course.id !== id); 
+    this.setState({ courses: this.courses });
   }
 
   handleClickLoadMore = (): void => {
@@ -31,7 +32,7 @@ class Courses extends Component {
       <section>
         <CoursesSectionActions onChangeSearchText={this.handleChangeSearchText} /> 
          <CoursesList onClickLoadMore={this.handleClickLoadMore}>
-            {this.courses.map((course: any) => {
+            {this.state.courses.map((course: any) => {
                 return <CoursesItem key={course.id}
                   course={course}
                   onClickEdit={this.handleClickEdit} 

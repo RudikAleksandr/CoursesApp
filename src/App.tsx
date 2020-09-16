@@ -8,8 +8,12 @@ function App() {
     <>
       <Header userFirstName='Aleksandr' 
         userLastName='Rudin' />
-      <Breadcrumbs />
-      <Courses />
+      <main>
+        <Breadcrumbs />
+        <div className="content-min-height content-padding">
+          <Courses />
+        </div>
+      </main>
       <Footer />
     </>
   );
