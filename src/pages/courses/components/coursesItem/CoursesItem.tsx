@@ -1,17 +1,13 @@
 import React, { MouseEvent } from 'react';
+import { Link } from 'react-router-dom';
 import './CoursesItem.scss';
 
 type Props = {
   course: any,
-  onClickEdit: Function,
   onClickDelete: Function
-}
+}   
 
 function CoursesItem(props: Props) {
-  const handleClickEdit = (event: MouseEvent): void => {
-    props.onClickEdit(props.course.id);
-  }
-
   const handleClickDelete = (event: MouseEvent): void => {
     props.onClickDelete(props.course.id);
   }
@@ -34,10 +30,10 @@ function CoursesItem(props: Props) {
       <div className="row">
         <p className="courses-item__description col-sm-12 col-md-9 col-lg-9">{ props.course.description }</p>
         <div className="courses-item__actions col-sm-12 col-md-3 col-lg-3">
-          <button className="courses-item__edit-btn btn" 
-            onClick={handleClickEdit}>
-            Edit
-          </button>
+          <Link to={`/course/${props.course.id}`}
+            className="courses-item__edit-btn btn">
+              Edit
+          </Link>
           <button className="courses-item__delete-btn btn" 
             onClick={handleClickDelete}>
             Delete

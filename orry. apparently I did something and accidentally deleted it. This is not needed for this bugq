@@ -1,0 +1,47 @@
+[33mcommit 70ec6615ddd2d27d5fc4f61e2601326a0ee0900e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Wed Sep 16 20:47:07 2020 +0300
+
+    Add filtering courses and delete course
+
+[33mcommit adc680dd4f11bf27d96881b3e3a066142b13360b[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Wed Sep 16 00:24:14 2020 +0300
+
+    Add courses page
+
+[33mcommit 857fb394c22f64bc7460d97619f6c7ae05e6aeb1[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Tue Sep 15 21:31:37 2020 +0300
+
+    Add Breadcrumbs component
+
+[33mcommit 02629dce19be67318056837a0a98884be63ee1a9[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Tue Sep 15 21:24:21 2020 +0300
+
+    Add Footer component
+
+[33mcommit 5735a9aa801bfa4f7ac04bc41f142387ede9e602[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Tue Sep 15 21:20:07 2020 +0300
+
+    Add Header component
+
+[33mcommit 93796582cdaecc41c8086e0840f0bd5dca175025[m
+Author: Aliaksandr Rudzin <Aliaksandr_Rudzin@epam.com>
+Date:   Tue Sep 15 20:24:23 2020 +0300
+
+    Initialize project using Create React App
+
+[33mcommit e2ee1a7a8f47a696a2c04bed9a6508b6fac9979f[m
+Author: RudikAleksandr <aleksandr.rudin.98@gmail.com>
+Date:   Sat Sep 12 15:06:02 2020 +0300
+
+    Update README.md
+
+[33mcommit b771c5779f92f435897ed2aafe570eb0e24b4788[m
+Author: RudikAleksandr <aleksandr.rudin.98@gmail.com>
+Date:   Sat Sep 12 15:03:52 2020 +0300
+
+    Initial commit
